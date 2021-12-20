@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+head {
+  border: black solid 2px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  padding: 20px;
+  margin: auto;
+}
+.wrapper {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+/*iphone Italien*/
+
+.iphone {
+  max-width: 375px;
+  max-height: 812px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+h1 p {
+  margin: 20px;
+}
+
+.row {
+  width: 100%;
+  min-width: 10px;
+  padding: 1rem 0;
+  min-height: 150px;
+  display: flex;
+  justify-content/*x-Achse*/: space-around;
+  align-items/*y-Achse*/ : stretch;
+  flex-direction: row;
+}
+
+.col {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 10px;
+  flex-grow: 2; /*auch möglich  width: 20%*/
+}
+
+.it-green {
+  background: green;
+  order: 0;
+  flex-grow: 2;
+}
+.it-white {
+  background: white;
+  order: 0;
+  flex-grow: 1;
+}
+.it-red {
+  background: red;
+  order: 0;
+  flex-grow: 2;
+}
+
+/*ipad Deutschland*/
+
+@media (min-width: 768px; max-width: 1024px;) 
+.ipad {
+
+  margin: 50px;
+  min-height: 300px;
+}
+h1 p {
+  margin: 20px;
+}
+
+.column {
+  width: 100%;
+  min-width: 10px;
+  padding: 1rem 0;
+  min-height: 150px;
+  display: flex;
+  justify-content/*x-Achse*/: space-around;
+  align-items/*y-Achse*/ : stretch;
+  flex-direction: column-reverse;
+}
+
+.column {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 0px;
+  flex-grow: 2; /*auch möglich  width: 20%*/
+}
+
+.de-black {
+  background: black;
+  order: 0;
+  flex-grow: 1;
+}
+.de-red {
+  background: red;
+  order: 1;
+  flex-grow: 1;
+}
+.de-yellow {
+  background: yellow;
+  order: 2;
+  flex-grow: 1;
+}
+
+/*Laptop Frankreich*/
+
+@media (min-width: 1327px;) 
+.laptop {
+  min-width: 1327px;
+  max-height: 1036px;
+  margin: auto;
+  min-height: 300px;
+}
+h1  {
+  margin: 20px;
+}
+ p {
+  margin: 20px;
+}
+
+.row {
+  width: 100%;
+  min-width: 10px;
+  padding: 1rem 0;
+  min-height: 150px;
+  display: flex;
+  justify-content/*x-Achse*/: space-around;
+  align-items/*y-Achse*/ : stretch;
+  }
+
+.col {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 0px;
+  flex-grow: 2; /*auch möglich  width: 20%*/
+}
+
+.fr-blue {
+  background: blue;
+  order: 0;
+  flex-grow: 1;
+
+}
+.fr-white {
+  background: white;
+  order: 0;
+  flex-grow: 1;
+}
+
+.fr-red {
+    background: red;
+    order: 0;
+    flex-grow: 1;}
